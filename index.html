@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel=”stylesheet” href=”css/styles.css”>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,700;1,100&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
@@ -20,16 +22,18 @@
     <div id= "logo header"> 
      <img src="images/logo.svg" alt="">
     </div>
-
-    <div id= "nav">   
-   Features
-   Pricing
-   Resources
-
-   Login
-   Sign Up
+    <div id= "nav">  
+     <nav>
+       <ul>
+         <li><a href="">Features</a></li>
+         <li><a href="">Pricing</a> </li> 
+         <li><a href="">Resources</a></li>
+         <li><a href="">Login</a></li> 
+         <li><a href="">Sign Up </a> </li> 
+       </ul>
+     </nav>
     </div>
-</header>
+  </header>
 <!----Aquí comienza el HERO--->
 
 <section id= "hero">
@@ -49,8 +53,10 @@
 
 <!----Aquí comienza section LINKS--->
 <section id= "links">
- <input type="text" name="Add links" id="addlinks">
- <button>Shorten It!</button>
+  <article id="sectionlinks">
+   <input type="text" name="Add links" id="addlinks">
+  <button>Shorten It!</button>
+  </article>
 </section>
 
 <!----Aquí comienza el STATISTICS--->
@@ -92,7 +98,7 @@
 <footer>
   <img src="images/logo.svg" alt=""> 
   <div id="features">
-   <h3>Features</h3>
+   <h4>Features</h4>
    <p> Link Shortening </p>
    <p>Branded Links</p> 
    <p>Analytics</p> 
@@ -100,7 +106,7 @@
   </div> 
 
 <div id="resources">
-  <h3> Resources </h3>
+  <h4> Resources </h4>
   <p> Blog </p>
   <p>Developers</p> 
   <p>Support</p> 
@@ -108,7 +114,7 @@
 </div>
   
 <div id="company">
-<h3>Company</h3>  
+<h4>Company</h4>  
 <p>About </p> 
  <p>Our Team</p> 
  <p>Careers</p> 
