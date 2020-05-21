@@ -3,25 +3,27 @@ header {
         height: 30px;
     }
     nav{
-        position: absolute;
-        background-color:  hsl(257, 27%, 26%);
-        color: white;
+        
+        background-color: $color-darkviolet;
         border-radius: 10px;
-        top: 80px;
+        color: white;
+        display: none;
         left: 20px;
         right: 20px;
         text-align: center;
+        top: 80px;
         padding: 20px;
+        position: absolute;
         a {
-         color: white;
+        color: white;
         text-decoration: none;
+        }
+        li{
+            margin-bottom: 10px;
         }
         ul {
             list-style-type:none;
             padding: 0;
-        }
-        li{
-            margin-bottom: 10px;
         }
         .separator {
             margin: 20px 0;
@@ -29,7 +31,7 @@ header {
             background-color: white;
         }
         .button {
-            background-color: blue;
+            background-color: $color-cyan;
             display: block;
             border-radius: 20px;
             padding: 10px;

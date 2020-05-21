@@ -1,0 +1,34 @@
+$color-cyan: hsl(180, 66%, 49%);
+$color-darkviolet: hsl(257, 27%, 26%);
+
+
+$color-red: hsl(0, 87%, 67%);
+
+
+$color-gray: hsl(0, 0%, 75%);
+$color-grayish: hsl(257, 7%, 63%);
+$color-darkgray: hsl(255, 11%, 22%);
+$color-verydarkgray: hsl(260, 8%, 14%);
+
+
+$font-size: 18px;
+
+
+$font-family: Poppins;
+$font-weights: 500, 700;
+
+$size-image: 375px;
+
+$button-get: {
+    background-color: $color-cyan;
+        color: white;
+        border-radius: 20px; 
+        text-align: center;   
+        font-family: $font-family;
+        padding: 5px;
+        padding-bottom: 20px;
+        font-size: 12px;
+        border: none;
+        width: 130px;
+        height: 30px;
+};

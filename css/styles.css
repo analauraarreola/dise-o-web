@@ -1,3 +1,10 @@
+body {
+  padding: 30px 10px;
+  font-family: Poppins;
+  font-size: 18px;
+  text-align: center;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -6,26 +13,27 @@ header .hamburger-icon {
   height: 30px;
 }
 header nav {
-  position: absolute;
   background-color: #3b3054;
-  color: white;
   border-radius: 10px;
-  top: 80px;
+  color: white;
+  display: none;
   left: 20px;
   right: 20px;
   text-align: center;
+  top: 80px;
   padding: 20px;
+  position: absolute;
 }
 header nav a {
   color: white;
   text-decoration: none;
 }
+header nav li {
+  margin-bottom: 10px;
+}
 header nav ul {
   list-style-type: none;
   padding: 0;
-}
-header nav li {
-  margin-bottom: 10px;
 }
 header nav .separator {
   margin: 20px 0;
@@ -33,13 +41,36 @@ header nav .separator {
   background-color: white;
 }
 header nav .button {
-  background-color: blue;
+  background-color: #2acfcf;
   display: block;
   border-radius: 20px;
   padding: 10px;
 }
 
-body {
-  padding: 30px 10px;
+.hero {
   font-family: Poppins;
+}
+.hero .hero-image {
+  width: 375px;
+}
+.hero .title-hero {
+  color: #232127;
+  text-align: center;
+}
+.hero .text-hero {
+  color: #bfbfbf;
+  text-align: center;
+}
+.hero .get-started {
+  background-color: #2acfcf;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+  font-family: Poppins;
+  padding: 5px;
+  padding-bottom: 20px;
+  font-size: 12px;
+  border: none;
+  width: 130px;
+  height: 30px;
 }

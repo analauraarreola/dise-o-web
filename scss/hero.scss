@@ -1,0 +1,29 @@
+.hero {
+    .hero-image {
+       width: 375px;
+
+    }
+    .title-hero{
+       color: $color-verydarkgray;
+      text-align: center;
+
+    }
+    .text-hero {
+        color: $color-gray;
+        text-align: center;
+    }
+    .get-started {
+        background-color: $color-cyan;
+        color: white;
+        border-radius: 20px; 
+        text-align: center;   
+        font-family: $font-family;
+        padding: 5px;
+        padding-bottom: 20px;
+        font-size: 12px;
+        border: none;
+        width: 130px;
+        height: 30px;
+    }
+    font-family: $font-family;
+}
