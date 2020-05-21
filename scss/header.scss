@@ -1,0 +1,41 @@
+header {
+    .hamburger-icon {
+        height: 30px;
+    }
+    nav{
+        position: absolute;
+        background-color:  hsl(257, 27%, 26%);
+        color: white;
+        border-radius: 10px;
+        top: 80px;
+        left: 20px;
+        right: 20px;
+        text-align: center;
+        padding: 20px;
+        a {
+         color: white;
+        text-decoration: none;
+        }
+        ul {
+            list-style-type:none;
+            padding: 0;
+        }
+        li{
+            margin-bottom: 10px;
+        }
+        .separator {
+            margin: 20px 0;
+            height: 1px;
+            background-color: white;
+        }
+        .button {
+            background-color: blue;
+            display: block;
+            border-radius: 20px;
+            padding: 10px;
+        }
+    }
+    display: flex;
+    justify-content: space-between;
+}
+
