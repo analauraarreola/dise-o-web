@@ -36,14 +36,14 @@ header nav ul {
   padding: 0;
 }
 header nav .separator {
-  margin: 20px 0;
-  height: 1px;
   background-color: white;
+  height: 1px;
+  margin: 20px 0;
 }
 header nav .button {
   background-color: #2acfcf;
-  display: block;
   border-radius: 20px;
+  display: block;
   padding: 10px;
 }
 
@@ -63,14 +63,86 @@ header nav .button {
 }
 .hero .get-started {
   background-color: #2acfcf;
-  color: white;
+  border: none;
   border-radius: 20px;
-  text-align: center;
+  color: white;
   font-family: Poppins;
+  font-size: 12px;
+  height: 30px;
+  text-align: center;
   padding: 5px;
   padding-bottom: 20px;
-  font-size: 12px;
-  border: none;
   width: 130px;
+}
+
+.links {
+  background-color: #3b3054;
+  border-radius: 10px;
+  font-family: Poppins;
+  height: 130px;
+  margin: 20px;
+  text-align: center;
+  width: 300px;
+}
+.links .addlinks {
+  border-radius: 5px;
+  border: none;
+  font-family: Poppins;
   height: 30px;
+  margin: 20px;
+  text-align: center;
+  top: 80px;
+  width: 250px;
+}
+.links .button-links {
+  border-radius: 5px;
+  background-color: #2acfcf;
+  color: white;
+  border: none;
+  font-family: Poppins;
+  height: 30px;
+  margin: 0px;
+  text-align: center;
+  width: 250px;
+}
+
+.info-statistics {
+  font-family: Poppins;
+  color: #9e9aa7;
+}
+.info-statistics h2 {
+  color: #35323e;
+}
+
+.statistics {
+  background: center;
+  background-color: #9e9aa7;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: inherit;
+}
+.statistics .info {
+  background-color: white;
+  border: 1px solid red;
+  border-radius: 5px;
+  margin: 20px;
+  width: 300px;
+  flex-shrink: 0;
+  align-items: center;
+}
+.statistics .info h2 {
+  color: #35323e;
+}
+.statistics .info p {
+  color: #9e9aa7;
+  font-size: 70%;
+}
+.statistics .info .statistics-image {
+  width: 50px;
+  background-color: #3b3054;
+  margin-top: -40px;
+  position: relative;
+  border-radius: 40px;
 }

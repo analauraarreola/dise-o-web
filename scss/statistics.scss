@@ -1,0 +1,39 @@
+.info-statistics {
+    font-family: $font-family;
+    color: $color-grayish;
+    h2{
+        color: $color-darkgray
+    }
+}
+.statistics {
+    align-items: center;
+    background: center;
+    background-color: $color-grayish;
+    box-sizing: inherit;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    .info{
+        align-items: center;
+        background-color: white;
+        border: 1px solid red;
+        border-radius: 5px;
+        flex-shrink: 0;
+        margin:20px;
+        width: 300px;
+        h2{
+            color: $color-darkgray;
+        }
+        p {
+            color: $color-grayish;
+            font-size: 70%;
+        }
+    .statistics-image {
+        width: 50px;
+        background-color: $color-darkviolet;
+        margin-top: -40px;
+        position: relative;
+        border-radius: 40px;
+        }
+    }
+}
