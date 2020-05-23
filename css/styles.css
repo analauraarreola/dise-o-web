@@ -11,13 +11,15 @@ body {
 .boost {
   background-color: #3b3054;
   color: white;
-  margin-bottom: 20px;
+  height: 250px;
   margin-top: 0;
+  width: 100%;
 }
 .boost .boost-links {
-  margin-bottom: 5px;
-  margin-top: 20px;
-  padding: 15px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-bottom: 14px;
+  padding-top: 90px;
 }
 .boost .get-button {
   background-color: #2acfcf;
@@ -36,6 +38,30 @@ body {
 
 footer {
   background-color: #35323e;
+  color: white;
+}
+footer .image-footer {
+  fill: white;
+  border: 10px white;
+  padding-top: 20px;
+  position: relative;
+}
+footer .footer-text {
+  font-size: 12px;
+}
+footer .social-media-icons {
+  align-items: center;
+  width: 100%;
+}
+footer .social-media-icons img {
+  margin: 10px;
+}
+
+.attribution {
+  background-color: #35323e;
+  color: white;
+  -webkit-text-decoration: nones;
+          text-decoration: nones;
 }
 
 header {
@@ -114,7 +140,9 @@ header nav .button {
   font-family: Poppins;
   height: 130px;
   margin: 20px;
+  margin-bottom: -65px;
   text-align: center;
+  position: relative;
 }
 .links .addlinks {
   border-radius: 5px;
@@ -139,11 +167,20 @@ header nav .button {
 }
 
 .info-statistics {
-  font-family: Poppins;
+  background-color: #f0f1f6;
+  background-size: cover;
   color: #9e9aa7;
+  font-family: Poppins;
+  padding-top: 40px;
 }
 .info-statistics h2 {
   color: #35323e;
+  padding-bottom: 0px;
+  padding-top: 17px;
+}
+.info-statistics p {
+  margin: 0px;
+  padding-bottom: 20px;
 }
 
 .statistics {

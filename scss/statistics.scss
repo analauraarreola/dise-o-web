@@ -1,8 +1,17 @@
 .info-statistics {
-    font-family: $font-family;
+    background-color: #f0f1f6;
+    background-size: cover;
     color: $color-grayish;
+    font-family: $font-family;
+    padding-top: 40px;
     h2{
-        color: $color-darkgray
+        color: $color-darkgray;
+        padding-bottom: 0px;
+        padding-top: 17px;
+    }
+    p{
+        margin:0px;
+        padding-bottom: 20px;
     }
 }
 .statistics {

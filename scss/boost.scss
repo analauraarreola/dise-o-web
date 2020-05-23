@@ -1,12 +1,14 @@
 .boost{
     background-color: $color-darkviolet;
     color: white;
-    margin-bottom: 20px;
+    height: 250px;
     margin-top: 0;
+    width: 100%;
     .boost-links{
-        margin-bottom: 5px;
-        margin-top: 20px;
-        padding: 15px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        padding-bottom: 14px;
+        padding-top: 90px;
     }
     .get-button{
         background-color: $color-cyan;

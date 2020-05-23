@@ -1,3 +1,31 @@
 footer{
     background-color: $color-darkgray;
+    color:white;
+    .image-footer{
+        fill: white;
+        border: 10px white;
+        padding-top: 20px;
+        position: relative;
+    }
+    .footer-title{
+
+    }
+    .footer-text{
+        font-size: 12px;
+
+    }
+    .social-media-icons{
+        align-items: center;
+        width: 100%;
+        img{
+            margin: 10px;
+        }
+
+    }
+}
+.attribution{
+    background-color: $color-darkgray;
+    color:white;
+    text-decoration: nones;
+
 }
