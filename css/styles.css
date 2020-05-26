@@ -10,6 +10,9 @@ body {
 
 .boost {
   background-color: #3b3054;
+  background-image: url("../images/bg-boost-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: right;
   color: white;
   height: 250px;
   margin-top: 0;
@@ -18,8 +21,7 @@ body {
 .boost .boost-links {
   margin-bottom: 0px;
   margin-top: 0px;
-  padding-bottom: 14px;
-  padding-top: 90px;
+  padding-top: 100px;
 }
 .boost .get-button {
   background-color: #2acfcf;
@@ -32,7 +34,6 @@ body {
   margin-bottom: 20px;
   text-align: center;
   padding: 5px;
-  padding-bottom: 20px;
   width: 130px;
 }
 
@@ -136,6 +137,10 @@ header nav .button {
 
 .links {
   background-color: #3b3054;
+  background-image: url("../images/bg-boost-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   border-radius: 10px;
   font-family: Poppins;
   height: 130px;

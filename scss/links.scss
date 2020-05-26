@@ -1,5 +1,9 @@
-.links {
-    background-color: $color-darkviolet;
+ .links {
+    background-color:$color-darkviolet;
+    background-image: url('../images/bg-boost-mobile.svg');
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size: cover;
     border-radius: 10px;
     font-family: $font-family;
     height: 130px;

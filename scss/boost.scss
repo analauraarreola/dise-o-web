@@ -1,5 +1,8 @@
 .boost{
     background-color: $color-darkviolet;
+    background-image: url('../images/bg-boost-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: right;
     color: white;
     height: 250px;
     margin-top: 0;
@@ -7,8 +10,7 @@
     .boost-links{
         margin-bottom: 0px;
         margin-top: 0px;
-        padding-bottom: 14px;
-        padding-top: 90px;
+        padding-top: 100px
     }
     .get-button{
         background-color: $color-cyan;
@@ -21,7 +23,6 @@
         margin-bottom: 20px;
         text-align: center;   
         padding: 5px;
-        padding-bottom: 20px;
         width: 130px;
     }
 }
