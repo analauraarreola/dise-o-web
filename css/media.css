@@ -1,0 +1,54 @@
+/*COLORS*/
+/*FONTS*/
+/*SIZES*/
+header {
+  width: 100%;
+  border: 10px solid red;
+  background-color: red;
+  display: flex;
+}
+header .hamburger-icon {
+  display: none;
+}
+header header nav {
+  background-color: grey;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  left: 20px;
+  right: 20px;
+  text-align: center;
+  top: 80px;
+  padding: 20px;
+  position: absolute;
+}
+
+.hero {
+  border: 10px solid red;
+  display: flex;
+}
+.hero .get-started {
+  background-color: #2acfcf;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-family: Poppins;
+  font-size: 12px;
+  height: 30px;
+  text-align: center;
+  padding: 5px;
+  padding-bottom: 20px;
+  width: 130px;
+}
+.hero .hero-image {
+  align-items: flex-end;
+}
+.hero .text-hero {
+  color: #bfbfbf;
+  text-align: center;
+}
+.hero .title-hero {
+  color: #232127;
+  text-align: center;
+  font-size: xxx-large;
+}

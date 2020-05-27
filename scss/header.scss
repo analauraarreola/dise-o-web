@@ -40,3 +40,47 @@ header {
     }
 }
 
+@media screen and (min-width:600px)  {
+    header {
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        margin: 0px;
+        width: 100%;
+    
+        #logo-header{
+            padding: 10px;
+        }
+        .hamburger-icon {
+            display: none;
+        }
+        nav{
+        background-color: white;
+        border-radius: 0px;
+        display: block;
+        height: auto;
+        left: 0px;
+        padding: 0px;
+        position: static;
+        right: 0px;
+        text-align: justify;
+        top:0px;
+
+          a{
+             color: $color-darkgray;
+             text-decoration: none;
+         }
+          ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            text-align: right;
+         }
+          li {
+             margin-bottom: 0px;
+             padding: 21px;
+         }
+        }
+    }
+
+}
