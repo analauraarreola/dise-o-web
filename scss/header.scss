@@ -47,9 +47,10 @@ header {
         justify-content: space-between;
         margin: 0px;
         width: 100%;
-    
-        #logo-header{
-            padding: 10px;
+        img {
+            padding: 0px;
+            margin-top: 30px;
+            margin-left: 100px;
         }
         .hamburger-icon {
             display: none;
@@ -57,14 +58,14 @@ header {
         nav{
         background-color: white;
         border-radius: 0px;
-        display: block;
+        display: flex;
         height: auto;
         left: 0px;
         padding: 0px;
         position: static;
         right: 0px;
         text-align: justify;
-        top:0px;
+        margin-top: 30px;
 
           a{
              color: $color-darkgray;
@@ -75,11 +76,28 @@ header {
             display: flex;
             justify-content: space-between;
             text-align: right;
+            margin: 0px;
          }
           li {
-             margin-bottom: 0px;
-             padding: 21px;
+            margin-bottom: 20px;
+            padding-right: 30px;
+            padding-left: 0px;
          }
+         .separator {
+            width: 556px;
+         }
+         .button {
+            background-color: $color-cyan;
+            border-radius: 30px;
+            color: white;
+            display: block;
+            margin-right: 80px;
+            margin-top: -9px;
+            text-align: center;
+            padding: 10px;
+            width: 100px;
+            
+        }
         }
     }
 

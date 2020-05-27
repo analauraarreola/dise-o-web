@@ -115,8 +115,10 @@ header nav .button {
     margin: 0px;
     width: 100%;
   }
-  header #logo-header {
-    padding: 10px;
+  header img {
+    padding: 0px;
+    margin-top: 30px;
+    margin-left: 100px;
   }
   header .hamburger-icon {
     display: none;
@@ -124,14 +126,14 @@ header nav .button {
   header nav {
     background-color: white;
     border-radius: 0px;
-    display: block;
+    display: flex;
     height: auto;
     left: 0px;
     padding: 0px;
     position: static;
     right: 0px;
     text-align: justify;
-    top: 0px;
+    margin-top: 30px;
   }
   header nav a {
     color: #35323e;
@@ -142,10 +144,26 @@ header nav .button {
     display: flex;
     justify-content: space-between;
     text-align: right;
+    margin: 0px;
   }
   header nav li {
-    margin-bottom: 0px;
-    padding: 21px;
+    margin-bottom: 20px;
+    padding-right: 30px;
+    padding-left: 0px;
+  }
+  header nav .separator {
+    width: 556px;
+  }
+  header nav .button {
+    background-color: #2acfcf;
+    border-radius: 30px;
+    color: white;
+    display: block;
+    margin-right: 80px;
+    margin-top: -9px;
+    text-align: center;
+    padding: 10px;
+    width: 100px;
   }
 }
 .hero {
