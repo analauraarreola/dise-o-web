@@ -29,3 +29,33 @@ footer{
     text-decoration: nones;
 
 }
+
+@media screen and (min-width:600px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        height: 280px;
+        .image-footer {
+            position: absolute;
+            left: 15%;
+            margin-top: 3%;
+        }
+        .footer-title {
+            position: relative;
+            left: 40%;
+            margin-top: 3%;
+        }
+        .footer-text {
+            position: relative;
+            left:34%;
+            margin-top: 7%;
+            text-align: left;
+        }
+        .social-media-icons {
+            position: relative;
+            width: 25%;
+            left: 35%;
+            margin-top: 4%;
+        }
+    }
+}
