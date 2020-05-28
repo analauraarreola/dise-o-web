@@ -37,7 +37,7 @@ body {
   width: 130px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   .boost {
     background-image: url("../images/bg-boost-desktop.svg");
   }
@@ -46,9 +46,9 @@ body {
   }
   .boost .get-button {
     height: 40px;
-    width: 180px;
     font-size: unset;
     margin-top: 1%;
+    width: 180px;
   }
 }
 footer {
@@ -75,42 +75,42 @@ footer .social-media-icons img {
 .attribution {
   background-color: #35323e;
   color: white;
-  -webkit-text-decoration: nones;
-          text-decoration: nones;
+  text-decoration: none;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   footer {
     display: flex;
     flex-direction: row;
     height: 280px;
   }
   footer .image-footer {
-    position: absolute;
     left: 15%;
     margin-top: 3%;
+    position: absolute;
   }
   footer .footer-title {
-    position: relative;
     left: 40%;
     margin-top: 3%;
+    position: relative;
   }
   footer .footer-text {
-    position: relative;
     left: 34%;
     margin-top: 7%;
+    position: relative;
     text-align: left;
   }
   footer .social-media-icons {
-    position: relative;
-    width: 25%;
     left: 35%;
     margin-top: 4%;
+    position: relative;
+    width: 25%;
   }
 }
 header {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 header .hamburger-icon {
   height: 30px;
@@ -150,73 +150,53 @@ header nav .button {
   padding: 10px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   header {
-    display: flex;
-    flex: 1;
-    justify-content: space-between;
-    left: 0%;
-    margin: 0px;
-    position: relative;
-  }
-  header #logoheader {
-    border: 0px;
-  }
-  header img {
-    padding: 0px;
-    margin-top: 0px;
-    margin-left: 0px;
-    position: relative;
-    left: 100%;
+    background-color: white;
   }
   header .hamburger-icon {
     display: none;
   }
+  header #logoheader {
+    background: white;
+    left: 0;
+    position: relative;
+    top: 30%;
+    width: 20%;
+  }
+  header #logoheader img {
+    left: 25%;
+    position: relative;
+    top: 29%;
+    width: 40%;
+  }
   header nav {
     background-color: white;
-    border-radius: 0px;
     display: flex;
-    left: -20%;
-    padding: 0px;
-    position: relative;
-    right: 0px;
-    top: 11%;
-    width: 35%;
-  }
-  header nav a {
-    color: #35323e;
-    text-decoration: none;
-  }
-  header nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    margin: 0px;
-    position: relative;
-    right: 0%;
-    left: -74%;
-    width: 33%;
-  }
-  header nav li {
-    margin-bottom: 0px;
-    padding-right: 30px;
-    padding-left: 0px;
-    width: 125%;
-    left: -17%;
+    left: 0;
+    position: inherit;
+    right: 0;
+    width: 90%;
   }
   header nav .separator {
-    margin-right: 270%;
+    width: 40%;
   }
-  header nav .button {
-    background-color: #2acfcf;
-    border-radius: 30px;
-    color: white;
-    display: block;
-    margin-right: 80px;
-    margin-top: -9px;
-    text-align: center;
-    padding: 10px;
-    width: 100px;
+  header ul {
+    background-color: white;
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+  }
+  header li {
+    width: 10%;
+  }
+  header li a {
+    color: #35323e;
+  }
+  header li .button {
+    position: relative;
+    top: -14%;
+    width: 100%;
   }
 }
 .hero {
@@ -247,38 +227,44 @@ header nav .button {
   text-align: center;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   .hero {
-    border: 10px solid red;
     display: flex;
+    background-color: white;
     position: relative;
-    margin-bottom: 4%;
-  }
-  .hero .hero-image {
-    position: relative;
-    left: 50%;
-    width: 50%;
-  }
-  .hero .title-hero {
-    right: 45%;
-    font-size: xxx-large;
-    margin-top: 4%;
-    text-align: left;
-    position: relative;
-    right: 43%;
     width: 100%;
   }
-  .hero .text-hero {
+  .hero .hero-image {
+    width: 50%;
+    background-color: white;
     position: relative;
-    right: 68%;
-    margin-top: 14%;
+    left: 50%;
+  }
+  .hero .title-hero {
+    background-color: white;
+    font-size: 42px;
+    height: 25%;
+    margin: 0;
+    position: absolute;
+    right: 58%;
     text-align: left;
-    width: 85%;
+    top: 30px;
+    width: 33%;
+  }
+  .hero .text-hero {
+    background-color: white;
+    height: 15%;
+    margin: 0;
+    position: absolute;
+    right: 56%;
+    text-align: left;
+    top: 35%;
+    width: 35%;
   }
   .hero .get-started {
-    position: relative;
-    right: 84%;
-    margin-top: 25%;
+    position: absolute;
+    right: 82%;
+    top: 50%;
   }
 }
 .links {
@@ -318,24 +304,24 @@ header nav .button {
   width: 250px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   .links {
+    background-image: url("../images/bg-shorten-desktop.svg");
+    left: 13%;
     position: relative;
     width: 70%;
-    left: 13%;
-    background-image: url("../images/bg-shorten-desktop.svg");
   }
   .links .addlinks {
-    width: 60%;
-    text-align: left;
     height: 30%;
-    padding-left: 1%;
     margin-top: 42px;
+    padding-left: 1%;
+    text-align: left;
+    width: 60%;
   }
   .links .button-links {
     height: 32%;
-    width: 15%;
     margin-left: 1%;
+    width: 15%;
   }
 }
 .info-statistics {
@@ -408,7 +394,7 @@ header nav .button {
   width: 35px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   .info-statistics {
     padding-top: 7%;
     width: 100%;
@@ -419,13 +405,13 @@ header nav .button {
     padding-bottom: 10%;
   }
   .statistics .info {
-    position: relative;
     left: 10%;
+    position: relative;
   }
   .statistics .info p {
+    left: 9%;
     text-align: left;
     position: relative;
-    left: 9%;
   }
   .statistics .circle {
     margin-left: 10%;

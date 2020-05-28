@@ -35,23 +35,23 @@
         }
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:1024px) {
     .links {
+        background-image: url('../images/bg-shorten-desktop.svg');
+        left: 13%;
         position: relative;
         width: 70%;
-        left: 13%;
-        background-image: url('../images/bg-shorten-desktop.svg');
         .addlinks {
-            width: 60%;
-            text-align: left;
             height: 30%;
-            padding-left: 1%;
             margin-top: 42px;
+            padding-left: 1%;
+            text-align: left;
+            width: 60%;
         }
         .button-links {
             height: 32%;
-            width: 15%;
             margin-left: 1%;
+            width: 15%;
         }
         
     }

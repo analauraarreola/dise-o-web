@@ -27,17 +27,17 @@
     }
 }
 
-@media screen and (min-width:600px) {
-    .boost {
+@media screen and (min-width:1024px) {
+.boost {
     background-image: url('../images/bg-boost-desktop.svg');
-    .boost-links {
-        font-size: xx-large;
+        .boost-links {
+         font-size: xx-large;
     }
     .get-button {
         height: 40px;
-        width: 180px;
         font-size: unset;
         margin-top: 1%;
+        width: 180px;
     }
-    }
+        }
 }

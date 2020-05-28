@@ -26,36 +26,36 @@ footer{
 .attribution{
     background-color: $color-darkgray;
     color:white;
-    text-decoration: nones;
+    text-decoration: none;
 
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:1024px) {
     footer {
         display: flex;
         flex-direction: row;
         height: 280px;
         .image-footer {
-            position: absolute;
             left: 15%;
             margin-top: 3%;
+            position: absolute;
         }
         .footer-title {
-            position: relative;
             left: 40%;
             margin-top: 3%;
+            position: relative;
         }
         .footer-text {
-            position: relative;
             left:34%;
             margin-top: 7%;
+            position: relative;
             text-align: left;
         }
         .social-media-icons {
-            position: relative;
-            width: 25%;
             left: 35%;
             margin-top: 4%;
+            position: relative;
+            width: 25%;
         }
     }
 }

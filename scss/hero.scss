@@ -26,38 +26,43 @@
     }
 }
 
-@media screen and (min-width:600px) {
-    .hero {
-        border: 10px solid red; 
-        display:flex;
+@media screen and (min-width:1024px) {
+.hero {
+    display: flex;
+    background-color: white;
+    position: relative;
+    width: 100%;
+    .hero-image {
+        width: 50%;
+        background-color: white;
         position: relative;
-        margin-bottom: 4%;
-        .hero-image{
-            position: relative;
-            left: 50%;
-            width: 50%;
+        left: 50%;
         }
-        .title-hero {
-            right: 45%;
-            font-size: xxx-large;
-            margin-top: 4%;
-            text-align: left;
-            position: relative;
-            right: 43%;
-            width: 100%;
-            
+    .title-hero {
+        background-color: white;
+        font-size: 42px;
+        height: 25%;
+        margin: 0;
+        position: absolute;
+        right: 58%;
+        text-align: left;
+        top: 30px;
+        width: 33%;
         }
-        .text-hero {
-            position: relative;
-            right: 68%;
-            margin-top: 14%;
-            text-align: left;
-            width: 85%;;
+    .text-hero {
+        background-color: white;
+        height: 15%;
+        margin: 0;
+        position: absolute;
+        right: 56%;
+        text-align: left;
+        top: 35%;
+        width: 35%;
         }
-        .get-started {
-            position: relative;
-            right: 84%;
-            margin-top: 25%;
+    .get-started {
+        position: absolute;
+        right: 82%;
+        top:50%
         }
     }
 }
