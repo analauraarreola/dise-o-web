@@ -1,3 +1,4 @@
+
 header {
     display: flex;
     justify-content: space-between;
@@ -5,17 +6,24 @@ header {
     .hamburger-icon {
         height: 30px;
     }
-    nav{
+    .menu.is-active{
+        left:4%;
+    }
+    .menu {
+        align-items: center;
         background-color: $color-darkviolet;
         border-radius: 10px;
         color: white;
-        display: none;
-        left: 20px;
+        display: flex;
+        justify-content: center;
+        left: -100vw;
         right: 20px;
         text-align: center;
         top: 80px;
         padding: 20px;
-        position: absolute;
+        position: fixed;
+        width: 80vw;
+        
             a {
             color: white;
             text-decoration: none;

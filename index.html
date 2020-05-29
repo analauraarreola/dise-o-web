@@ -20,8 +20,8 @@
     <div id= "logoheader">
      <img src="images/logo.svg" alt="">
     </div>
-  <a href="nav"> <img src="images/bars-solid.svg" class= "hamburger-icon" alt=""> </a>
-     <nav>
+   <img src="images/bars-solid.svg" id= 'burger' class= "hamburger-icon" alt=""> 
+     <nav class="menu">
        <ul>
          <li><a href="">Features</a></li>
          <li><a href="">Pricing</a></li> 
@@ -125,7 +125,25 @@
 </footer>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Ana Laura Arreola</a>.
-  </div> 
+    Coded by <a href="#">Ana Laura Arreola ❤️</a>.
+  </div>
+  <script>
+    console.log('Hola mundo');
+   
+   const menu = document.querySelector('.menu');
+   console.log (menu);
+   const burgerButton = document.querySelector ('#burger');
+   console.log (burgerButton);
+
+   burgerButton.addEventListener('click', hideShow)
+   
+   function hideShow (){
+   if (menu.classList.contains('is-active')){
+   menu.classList.remove('is-active');
+   } else {
+   menu.classList.add('is-active');
+   }
+   }
+  </script> 
 </body>
 </html>

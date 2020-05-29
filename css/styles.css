@@ -115,35 +115,41 @@ header {
 header .hamburger-icon {
   height: 30px;
 }
-header nav {
+header .menu.is-active {
+  left: 4%;
+}
+header .menu {
+  align-items: center;
   background-color: #3b3054;
   border-radius: 10px;
   color: white;
-  display: none;
-  left: 20px;
+  display: flex;
+  justify-content: center;
+  left: -100vw;
   right: 20px;
   text-align: center;
   top: 80px;
   padding: 20px;
-  position: absolute;
+  position: fixed;
+  width: 80vw;
 }
-header nav a {
+header .menu a {
   color: white;
   text-decoration: none;
 }
-header nav li {
+header .menu li {
   margin-bottom: 10px;
 }
-header nav ul {
+header .menu ul {
   list-style-type: none;
   padding: 0;
 }
-header nav .separator {
+header .menu .separator {
   background-color: white;
   height: 1px;
   margin: 20px 0;
 }
-header nav .button {
+header .menu .button {
   background-color: #2acfcf;
   border-radius: 20px;
   display: block;
