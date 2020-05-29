@@ -176,7 +176,7 @@ header .menu .button {
     top: 29%;
     width: 40%;
   }
-  header nav {
+  header .menu {
     background-color: white;
     display: flex;
     left: 0;
@@ -184,7 +184,10 @@ header .menu .button {
     right: 0;
     width: 90%;
   }
-  header nav .separator {
+  header .menu a {
+    color: gray;
+  }
+  header .menu .separator {
     width: 40%;
   }
   header ul {
@@ -196,13 +199,11 @@ header .menu .button {
   header li {
     width: 10%;
   }
-  header li a {
-    color: #35323e;
-  }
   header li .button {
     position: relative;
     top: -14%;
     width: 100%;
+    color: white;
   }
 }
 .hero {
