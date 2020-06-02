@@ -310,6 +310,12 @@ header .menu .button {
   text-align: center;
   width: 250px;
 }
+.links .error {
+  display: none;
+  margin: 0;
+  width: 25%;
+  color: red;
+}
 
 @media screen and (min-width: 1024px) {
   .links {

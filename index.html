@@ -43,11 +43,12 @@
 </section>
 
 <section class= "links">
-   <input type="text"  class="addlinks" placeholder="Shorten a link here!"> 
-   <button class="button-links">Shorten It!</button>
+   <input type="text" id="my-inpyt" class="addlinks" placeholder="Shorten a link here!" onfocus="clearError()"> 
+   <button type="submit"class="button-links" onclick="UserAction()">Shorten It!</button>
+   <p class="error">Please, add a link!</p>
 </section>
 
-<div class="info-statistics"> 
+<div class="info-statistics">  
   <h2>Advanced Statistics</h2>
   <p> Track how your links are performingacross the web with <br> our 
   advanced  statistics dashboard.</p>
@@ -144,6 +145,36 @@
    menu.classList.add('is-active');
    }
    }
-  </script> 
+</script> 
+<script>
+  function UserAction() {
+    var input = document.getElementById('my-inpyt').value
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+         if (this.readyState == 4 && this.status == 201) {
+            var response = JSON.parse(this.responseText);
+            var shortenLink = "https://rel.ink/" + response.hashid;
+
+            document.getElementsByClassName('info-statistics')[0].insertAdjacentHTML('afterbegin', `<div class='test'> \
+                                                                                                      <p>${input}/p> \
+                                                                                                      <a>${shortenLink}</a> \
+                                                                                                      <button>Copy</button> \
+                                                                                                    </div>`)
+         } else if (this.readyState == 4 && this.status != 201) {
+           document.getElementById('my-inpyt').style.border = "1px solid red";
+           document.getElementsByClassName('error')[0].style.display = "block";
+         }
+    };
+
+    xhttp.open('POST', 'https://rel.ink/api/links/', true);
+    xhttp.setRequestHeader('Content-type', 'application/json');
+    xhttp.send(JSON.stringify({url : input}))
+  }
+
+  function clearError() {
+    document.getElementsByClassName('error')[0].style.display = "none";
+    document.getElementById('my-inpyt').style.border = "none";
+  }
+</script>
 </body>
 </html>
