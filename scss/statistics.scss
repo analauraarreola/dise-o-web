@@ -75,9 +75,12 @@
     .statistics {
         flex-direction: row;
         padding-bottom: 10%;
+        padding-top: 4%;
         .info {
-            left: 10%;
+            left: 0;
             position: relative;
+            width: 33%;
+            flex-shrink: inherit;
             p {
                 left: 9%;
                 text-align: left;
@@ -91,5 +94,62 @@
             .vl{
                 display: none;
             }
+    }
+}
+.test{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    height: 40px;
+    margin:2% auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 15px;
+    text-align: initial;
+    width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 15px;
+
+    p {
+        background-color: white;
+        text-align: left;
+        margin-left: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 70%;
+
+    }
+
+}
+.shorten-links{
+    display:flex;
+    width: 35%;
+    font-size: 15px;
+    a{
+        background-color: white;
+        color:$color-cyan;
+        text-align: initial;
+        padding-left: 10px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 60%;
+
+    }
+    button{
+    height: 35px;
+    width: 25%;
+    background-color: #33dcdf;
+    border-radius: 5px;
+    border: none;
+    color: #FFFF;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
     }
 }

@@ -6,7 +6,7 @@
   
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
-
+  <link rel="javascript" href="../webdesign/js/index.js">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,700;1,100&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
@@ -14,7 +14,7 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
  
 </head>
-<body>
+<body scroll=no>
   <!----Aquí comienza el HEADER--->
   <header>
     <div id= "logoheader">
@@ -128,67 +128,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Ana Laura Arreola ❤️</a>.
   </div>
-  <script>
-    console.log('Hola mundo');
-   
-   const menu = document.querySelector('.menu');
-   console.log (menu);
-   const burgerButton = document.querySelector ('#burger');
-   console.log (burgerButton);
+  <script src="../webdesign/js/index.js"> </script> 
 
-   burgerButton.addEventListener('click', hideShow)
-   
-   function hideShow (){
-   if (menu.classList.contains('is-active')){
-   menu.classList.remove('is-active');
-   } else {
-   menu.classList.add('is-active');
-   }
-   }
-</script> 
-<script>
-  renderResponses();
-
-  function UserAction() {
-    var input = document.getElementById('my-inpyt').value
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-         if (this.readyState == 4 && this.status == 201) {
-            var response = JSON.parse(this.responseText);
-            localStorage.setItem(response.hashid, this.response)
-            renderResponses();
-         } else if (this.readyState == 4 && this.status != 201) {
-           document.getElementById('my-inpyt').style.border = "1px solid red";
-           document.getElementsByClassName('error')[0].style.display = "block";
-         }
-    };
-
-    xhttp.open('POST', 'https://rel.ink/api/links/', true);
-    xhttp.setRequestHeader('Content-type', 'application/json');
-    xhttp.send(JSON.stringify({url : input}))
-  }
-
-  function renderResponses() {
-    var elements = document.querySelectorAll('.test');  
-    for (var element of elements) {
-      element.remove();
-    }
-
-    for (var value in localStorage) {
-      var object = JSON.parse(localStorage.getItem(value))
-      var shortenLink = "https://rel.ink/" + object.hashid;
-      document.getElementsByClassName('info-statistics')[0].insertAdjacentHTML('afterbegin', `<div class='test'> \
-                                                                                                <p>${object.url}/p> \
-                                                                                                <a>${shortenLink}</a> \
-                                                                                                <button>Copy</button> \
-                                                                                              </div>`);
-    }
-  }
-
-  function clearError() {
-    document.getElementsByClassName('error')[0].style.display = "none";
-    document.getElementById('my-inpyt').style.border = "none";
-  }
-</script>
 </body>
 </html>
